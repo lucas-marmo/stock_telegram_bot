@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timba Bot Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="/static/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Welcome to the <b>Timba Bot Manager</b></h1>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><button onclick="cotizarAccion()">Obtener precio acción seleccionada</button></li>
+                <label for="acciones">Selecciona una acción:</label>
+                <select id="acciones">
+                    <option value="AAPL" selected>Apple</option>
+                    <option value="TSLA">Tesla</option>
+                    <option value="MSFT">Microsoft</option>
+                </select>
+            <li><button href="#">Acerca de</button></li>
+            <li><button href="#">Contacto</button></li>
+        </ul>
+    </nav>
+    <main>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        function cotizarAccion() {
+            var selectElement = document.getElementById('acciones');
+            var selectedValue = selectElement.value;
+            window.location.href = '/precio/' + selectedValue;
+        }
+    </script>
+</body>
+</html>

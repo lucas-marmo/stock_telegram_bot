@@ -1,0 +1,4 @@
+Set-ExecutionPolicy Bypass -Scope Process
+.\env\Scripts\Activate
+
+flask --app flask_app.py run

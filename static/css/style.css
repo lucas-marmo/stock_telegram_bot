@@ -1,0 +1,40 @@
+/* Estilos para el título h1 */
+.titulo {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin: 20px 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+/* Estilos para el menú */
+.menu {
+    text-align: center; /* Centrar el contenido del menú */
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para los botones */
+  .menu li button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .menu li button:hover {
+    background-color: #45a049;
+  }

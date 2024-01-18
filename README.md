@@ -9,4 +9,5 @@ TOKEN = `'string'`
 CHAT_ID = `integer`
 
 To know your bot's token, ask it to @BotFather
+
 To know your chat's id, ask it to @useridinfobot by sending the command `/start`
